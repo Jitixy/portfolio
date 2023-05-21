@@ -6,196 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jiti's portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 1, 57);
-            color: white;
-            font-family: 'Nunito', sans-serif;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(0, 1, 57);
-
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 24px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        main hr {
-            border: 0;
-            background: rgba(117, 125, 245, 255);
-            height: 1.1px;
-            margin: 40px 84px;
-        }
-
-        nav ul li a:hover {
-            color: rgba(117, 125, 245, 255);
-            font-size: 1.03rem;
-        }
-
-        .left {
-            font-size: 2rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            margin: 140px 0;
-            align-items: center;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 2.7rem;
-
-        }
-        .buttons{
-            padding: 50px;
-            padding-left: 0px;
-        }
-        .leftsection .btn{
-            padding: 12px ;
-            background: #000;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .rightsection img {
-            width: 80%;
-
-        }
-
-        .purple {
-            color: rgba(117, 125, 245, 255);
-        }
-
-        #element {
-            color: rgba(117, 125, 245, 255);
-
-
-        }
-
-        .secondsection {
-            width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondsection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 100px 0;
-            display: flex;
-        }
-
-        .secondsection .vertical {
-            height: 90px;
-            width: 1px;
-            background-color: white;
-            margin-left: 85px;
-            margin-right: 216px;
-
-        }
-
-        .secondsection h1 {
-            font-size: 2rem;
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        .verticaltitle {
-            position: relative;
-            top: 9px;
-            width: 150px;
-            font-size: 1.5rem;
-
-        }
-
-        .verticaldesc {
-            position: relative;
-            top: 34px;
-            width: 150px;
-
-        }
-
-        .image-top {
-            width: 100px;
-            left: -47px;
-            position: relative;
-            top: -86px;
-        }
-
-        footer {
-            background-color: black;
-            height: 100px;
-
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 233px;
-
-        }
-
-        footer .textcenter {
-            text-align: center;
-            color: gray;
-        }
-    </style>
+    
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">jiti's portfolio</div>
+            <div class="content">
+                <h2>Jiti's Portfolio</h2>
+                <h2>Jiti's Portfolio</h2>
+            </div>
             <div class="right">
                 <ul>
-                    <li><a href="/">home</a></li>
-                    <li><a href="/">about</a></li>
-                    <li><a href="/">services</a></li>
-                    <li><a href="/">projects</a></li>
-                    <li><a href="/">contact me</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">SERVICES</a></li>
+                    <li><a href="/">PROJECTS</a></li>
+                    <li><a href="/">CONTACT ME</a></li>
 
                 </ul>
             </div>
@@ -209,48 +38,54 @@
                 <div>and i am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn"><a href=""> Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/Jitixy"> Visit Github</a></button><br>
+                    <button id="scrollButton" class="scroll-button" onclick="scrollToSection()">Move Down<br>To See
+                        More</button>
                 </div>
 
             </div>
             <div class="rightsection">
-                <img src="bg.png" alt="">
+
+
+
 
             </div>
 
 
 
         </section>
-        <hr>
+
         <section class="secondsection">
-            <span class="text-gray">What i have done so far</span>
-            <h1>Past Experience</h1>
+            <div class="experience"><span class="text-gray">What i have done so far</span>
+                <h1>Past Experience</h1>
+            </div>
             <div class="box">
                 <div class="vertical">
                     <img src="firstimage.png" alt="" class="image-top">
-                    <div class="verticaltitle">html css intern</div>
-                    <div class="verticaldesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias.
+                    <div class="verticaltitle">Frontend Intern</div>
+                    <div class="company">ME GROUP (Oct2021-Sept2022)</div>
+                    <div class="verticaldesc">
+
+                        I joined ME Group as a Frontend Intern during my first year of BSc in Computer Science at Punjab
+                        University, Chandigarh. ME Group is based in Mohali, Punjab, India. Prior to joining, I
+                        self-learned HTML, CSS, JavaScript, and Python. At ME Group, I gained experience in Vue.js and
+                        React.js, expanding my skills.
                     </div>
                 </div>
                 <div class="vertical">
-                    <img src="firstimage.png" alt="" class="image-top">
-                    <div class="verticaltitle">html css intern</div>
-                    <div class="verticaldesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias.
+                    <img src="vue.png" alt="" class="image-top">
+                    <div class="verticaltitle">VueJs dev.</div>
+                    <div class="company">ME GROUP <br>(Oct2022-present)</div>
+                    <div class="verticaldesc">
+
+                        In September 2022, I relocated to Toronto, Canada, to pursue computer programming at Sheridan
+                        College. While studying, I had the opportunity to continue working remotely for my first
+                        company. They promoted me to a full-time role as a Vue.js developer, as the majority of their
+                        projects were based on Vue.js. During this period, I mastered my Vue.js skills.
                     </div>
                 </div>
-                <div class="vertical">
-                    <img src="firstimage.png" alt="" class="image-top">
-                    <div class="verticaltitle">html css intern</div>
-                    <div class="verticaldesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img src="firstimage.png" alt="" class="image-top">
-                    <div class="verticaltitle">html css intern</div>
-                    <div class="verticaldesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias.
-                    </div>
-                </div>
+
 
             </div>
         </section>
@@ -283,12 +118,9 @@
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer', 'Trader', 'Learner'],
-            typeSpeed: 50,
-        });
-    </script>
+    
+    <script src="portfolio.js"></script>
+
 </body>
 
 </html>

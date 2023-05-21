@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: url(b7.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 24px;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main hr {
+    border: 0;
+    background: white;
+    height: 1.1px;
+    margin: 40px 84px;
+}
+
+nav ul li a:hover {
+    color: #00b1cf;
+    font-size: 1.03rem;
+}
+
+
+
+.content {
+    position: relative;
+    margin-top: 7%;
+
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 7%;
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(-50% 1%,
+                1% 4%,
+                3% 50%,
+                5% 60%,
+                70% 61%,
+                84% 59%,
+                10% 2%,
+                50% 140%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 209px 0;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 2.7rem;
+
+
+}
+
+.buttons {
+    padding: 50px;
+    padding-left: 0px;
+}
+
+.leftsection .btn {
+
+    padding: 12px;
+    background: transparent;
+    color: #00b1cf;
+    border: 2px solid #00b1cf;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.leftsection .btn:hover {
+
+
+    background: transparent;
+    color: white;
+    border: 2px solid #00b1cf;
+    background: #00b1cf;
+    border-radius: 6px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.rightsection img {
+    width: 80%;
+
+}
+
+.purple {
+    color: #00b1cf;
+}
+
+#element {
+    color: #00b1cf;
+
+
+}
+
+.secondsection {
+    width: 90vw;
+    padding-left: 10%;
+
+    height: 80vh;
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 60% 50% 40% 30%;
+}
+
+.secondsection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 100px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 90px;
+    width: 1px;
+    background-color: white;
+    margin-left: 85px;
+    margin-right: 216px;
+
+
+}
+
+
+.secondsection h1 {
+    font-size: 2rem;
+    color: #00b1cf;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.verticaltitle {
+    position: relative;
+    top: 9px;
+    width: 165px;
+    font-size: 1.5rem;
+
+}
+
+.verticaldesc {
+    position: relative;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 30px;
+    top: 34px;
+    width: 214px;
+    font-size: 15px;
+    color: gray;
+
+}
+
+.image-top {
+    width: 100px;
+    left: -47px;
+    position: relative;
+    top: -86px;
+    border: 8px solid black;
+    border-radius: 60%;
+    background: #000;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    height: 100px;
+
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 233px;
+
+}
+
+footer .textcenter {
+    text-align: center;
+    color: gray;
+}
+
+.company {
+    position: relative;
+    top: 9px;
+    width: 165px;
+    font-size: 1.1rem;
+}
+
+.vertical span {
+    border: 2px white;
+}
+
+.scroll-button {
+    position: fixed;
+    top: 80px;
+    right: 50px;
+    background-color: #00b1cf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: top 0.3s ease-in-out;
+    z-index: 9999;
+    /* Ensure the button stays on top */
+}
+
+.scroll-button.scroll-up {
+    top: 20px;
+    /* Adjust the position as desired */
+}
+
+.scroll-button:hover {
+    background-color: #008ba3;
+}
+
+.experience {
+    border: 2px solid black;
+    margin-right: 76%;
+    padding-left: 2px;
+    
+    padding: 30px;
+    padding-bottom: 1px;
+    background: black;
+    border-radius: 90% 90% 90% 40%;
+
+}
